@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --paper: #0c0b0a;
+  --ink: #f0e9df;
+  --muted: #9e958b;
+  --line: #302a25;
+  --orange: #bd955d;
+  --orange-soft: #2d241b;
+  --blue: #3b201c;
+  --nav-surface: rgba(255, 255, 255, 0.035);
+  --hover-surface: rgba(255, 255, 255, 0.045);
+  --sans: 'DM Sans', sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --mono: 'DM Mono', monospace;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root[data-theme='light'] {
+  --paper: #f2ede5;
+  --ink: #1d1814;
+  --muted: #776e64;
+  --line: #cec3b6;
+  --orange: #8f6738;
+  --orange-soft: #e8dbc9;
+  --blue: #5a3028;
+  --nav-surface: rgba(255, 255, 255, 0.4);
+  --hover-surface: rgba(255, 255, 255, 0.52);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: var(--paper); transition: background 220ms ease, color 220ms ease; }
+button, input { font: inherit; }
+::selection { color: white; background: var(--orange); }

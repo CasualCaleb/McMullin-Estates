@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0b0a" />
+    <meta name="description" content="McMullin Estates — independent property advisors." />
+    <link rel="icon" href="/favicon.svg" />
+    <title>McMullin Estates — Remarkable homes, thoughtfully placed</title>
+    <script>
+      const savedTheme = localStorage.getItem('theme')
+      document.documentElement.dataset.theme = ['light', 'dark'].includes(savedTheme)
+        ? savedTheme
+        : 'dark'
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
